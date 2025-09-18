@@ -32,34 +32,14 @@ Contains the decid package and the jupyter notebooks:
 ## RUNNING THE PROJECT 
 
 ### OPTION 1: LOCAL
-Recommended setup: Visual Studio Code (VSC) with a local Python environment.
-1. Open the project folder in VSC.
-2. Create a new Python virtual environment in a local folder (e.g., .venv).
-   
-	% Windows PowerShell
-
-	python -m venv .venv
-
-	.venv\Scripts\activate
-
-
-	% macOS / Linux
-
-	python3 -m venv .venv
-
-	source .venv/bin/activate
-
-4. Install dependencies: 
+Recommended setup: Visual Studio Code (VSC) with a local Python environment and jupyter extension.
+1. Clone the repo
+2. Download the dataset from [link]
+3. Put the data in `data/` folder
+4. Create a new Python virtual environment in a local folder (e.g., .venv).
+5. Install dependencies: 
 	pip install -r requirements_local.txt
-5. Open the Jupyter notebooks in the scripts/ folder and run them in order.
-
-
-### OPTION 2: GOOGLE COLAB
-See Colab setup: 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/runedeclercq/GabonTreeProject/blob/main/0_Colab_setup.ipynb)
-
-
-
+6. Open the Jupyter notebooks in the scripts/ folder and run them in order, or run `python run_all.py` to generate outputs
 
 
 
