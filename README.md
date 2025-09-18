@@ -63,7 +63,9 @@ Recommended setup: Visual Studio Code (VSC) with a local Python environment.
 
 
 ### OPTION 2: GOOGLE COLAB
-1. Mount Google Drive (or upload your Phenocams.zip directly):
+See Colab setup: 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/repo_name/blob/main/notebooks/Colab_Template.ipynb)
+
 
 
 
