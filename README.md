@@ -43,11 +43,11 @@ Contains the decid package and the jupyter notebooks:
 Recommended setup: Visual Studio Code (VSC) with a local Python environment.
 1. Open the project folder in VSC.
 2. Create a new Python virtual environment in a local folder (e.g., .venv).
-	# Windows PowerShell
+	% Windows PowerShell
 	python -m venv .venv
 	.venv\Scripts\activate
 
-	# macOS / Linux
+	% macOS / Linux
 	python3 -m venv .venv
 	source .venv/bin/activate
 3. Install dependencies: 
