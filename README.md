@@ -30,8 +30,6 @@ Contains the decid package and the jupyter notebooks:
 - 6_rain_and_flowering.ipynb	— identify rain events and bloom periods
 
 ## RUNNING THE PROJECT 
-
-### OPTION 1: LOCAL
 Recommended setup: Visual Studio Code (VSC) with a local Python environment and jupyter extension.
 1. Clone the repo
 2. Download the dataset from [link]
