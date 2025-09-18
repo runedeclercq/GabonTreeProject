@@ -18,6 +18,9 @@ Contains the R code and provided data in Bush_data/.
 
 The R script Bush_climate_variables_writeout.R exports plotting data as CSVs for use in Python notebooks.
 
+## data
+contains all necessary data for running the scripts
+
 ## scripts 
 Contains the decid package and the jupyter notebooks:
 

@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 outputs/
 data/Phenocams.zip
+scripts/6_phenocam_data_animation.ipynb
