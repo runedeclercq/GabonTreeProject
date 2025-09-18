@@ -37,7 +37,7 @@ Contains the decid package and the jupyter notebooks:
 - 6_phenocam_data_animation.ipynb — create and save MP4 animation of phenocam data
 - 6_rain_and_flowering.ipynb	— identify rain events and bloom periods
 
-## RUNNING THE PROJECT ----------------------
+## RUNNING THE PROJECT 
 
 ### OPTION 1: LOCAL
 Recommended setup: Visual Studio Code (VSC) with a local Python environment.
