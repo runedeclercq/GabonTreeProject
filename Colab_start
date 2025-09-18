@@ -14,7 +14,7 @@ OUTPUTS_PATH = f"{DRIVE_PATH}/outputs"
 
 # 2️⃣ Clone GitHub repo
 # Replace with your actual repo URL
-!git clone https://github.com/username/repo_name.git
+!git clone https://github.com/runedeclercq/GabonTreeProject.git
 %cd repo_name
 
 # 3️⃣ Install dependencies
@@ -43,13 +43,3 @@ for nb in notebooks:
     print(f"🚀 Executing {nb} ...")
     !jupyter nbconvert --to notebook --execute "{nb}" --output executed_{nb.split('/')[-1]}
 
-# 6️⃣ Optional: run phenocam animation separately
-from decid_package import image_animation as phenocam
-
-zip_path = f"{DATA_PATH}/Phenocams.zip"
-start_time = "2024-10-22 12:00:00"
-end_time = "2024-10-30 12:30:00"
-interval = 100  # milliseconds per frame
-export_path = f"{OUTPUTS_PATH}/phenocam_videos/phenocam_leaf_flush.mp4"
-
-phenocam.run_phenocam_animation(zip_path, start_time, end_time, interval, export_path)
