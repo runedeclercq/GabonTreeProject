@@ -3,7 +3,7 @@
 This folder contains the data and Jupyter Notebook scripts for analyzing TreeWatch data (Natkon dendrometer + sap flow sensor), combined with TOMST sensor data and phenological image data.
 
 
-## FOLDER STRUCTURE ---------------------
+## FOLDER STRUCTURE 
 
 Bush_climate_R_scripts/    # R scripts by Bush et al. (2020)
 data/                      # All raw data (TOMST, sap flow, Natkon, phenology, temperature, phenocams.zip)
@@ -11,22 +11,22 @@ outputs/                   # Generated figures and CSVs
 scripts/                   # Python decid package + Jupyter notebooks
 
 
-# SUBFOLDERS DETAILS ----------------------
+# SUBFOLDERS DETAILS 
 
-## Bush_climate_R_scripts ----
+## Bush_climate_R_scripts 
 Contains the R code and provided data in Bush_data/.
 
 The R script Bush_climate_variables_writeout.R exports plotting data as CSVs for use in Python notebooks.
 
-## data ---
+## data 
 TOMST data, sap flow data, Natkon dendrometer data, phenological data, temperature data.
 Phenocams.zip contains all phenocam images.
 
-## outputs ---
+## outputs 
 Contains figures and csv's produced during the data processing
 
 
-## scripts ---
+## scripts 
 Contains the decid package and the jupyter notebooks:
 
 - 1_data_cleanup.ipynb 		— data cleaning, detrending, smoothing
