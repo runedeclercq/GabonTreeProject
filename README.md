@@ -5,10 +5,10 @@ This folder contains the data and Jupyter Notebook scripts for analyzing TreeWat
 
 ## FOLDER STRUCTURE 
 
-Bush_climate_R_scripts/    # R scripts by Bush et al. (2020)
-data/                      # All raw data (TOMST, sap flow, Natkon, phenology, temperature, phenocams.zip)
-outputs/                   # Generated figures and CSVs
-scripts/                   # Python decid package + Jupyter notebooks
+Bush_climate_R_scripts/ -  R scripts by Bush et al. (2020)
+
+scripts/                  -  Python decid package + Jupyter notebooks
+
 
 
 # SUBFOLDERS DETAILS 
@@ -17,14 +17,6 @@ scripts/                   # Python decid package + Jupyter notebooks
 Contains the R code and provided data in Bush_data/.
 
 The R script Bush_climate_variables_writeout.R exports plotting data as CSVs for use in Python notebooks.
-
-## data 
-TOMST data, sap flow data, Natkon dendrometer data, phenological data, temperature data.
-Phenocams.zip contains all phenocam images.
-
-## outputs 
-Contains figures and csv's produced during the data processing
-
 
 ## scripts 
 Contains the decid package and the jupyter notebooks:
@@ -65,6 +57,8 @@ Recommended setup: Visual Studio Code (VSC) with a local Python environment.
 ### OPTION 2: GOOGLE COLAB
 See Colab setup: 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/runedeclercq/GabonTreeProject/blob/main/0_Colab_setup.ipynb)
+
+
 
 
 
