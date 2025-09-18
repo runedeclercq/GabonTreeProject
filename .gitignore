@@ -1,6 +1,7 @@
 .gabontree/
 __pycache__/
 *.pyc
-outputs/
+outputs/*
+!outputs/.gitkeep
 data/Phenocams.zip
 scripts/6_phenocam_data_animation.ipynb
