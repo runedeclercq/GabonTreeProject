@@ -58,7 +58,7 @@ notebooks = [
 # 4️⃣ Execute notebooks sequentially
 # ---------------------------
 for nb in notebooks:
-    nb_path = os.path.join(REPO_ROOT, nb)
+    nb_path = os.path.join(SCRIPTS_PATH, nb)
     output_nb = os.path.join(OUTPUTS_PATH, f"executed_{os.path.basename(nb)}")
     print(f"🚀 Executing {nb_path} → {output_nb}")
     os.system(f'jupyter nbconvert --to notebook --execute "{nb_path}" --output "{output_nb}"')
