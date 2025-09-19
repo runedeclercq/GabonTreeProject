@@ -15,11 +15,20 @@ import urllib.request
 # 1️⃣ Paths
 # ---------------------------
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 SCRIPTS_PATH = os.path.join(REPO_ROOT, "scripts")
 DATA_PATH = os.path.join(REPO_ROOT, "data")
+
+# Default outputs inside repo
 OUTPUTS_PATH = os.path.join(REPO_ROOT, "outputs")
 
+# If Google Drive is mounted, use it instead
+drive_outputs = "/content/drive/MyDrive/GabonTreeProject/outputs"
+if os.path.exists("/content/drive/MyDrive"):
+    OUTPUTS_PATH = drive_outputs
+
 os.makedirs(OUTPUTS_PATH, exist_ok=True)
+
 sys.path.append(SCRIPTS_PATH)  # make decid_package importable
 
 # ---------------------------
@@ -44,13 +53,6 @@ notebooks = [
     "scripts/5_water_relations.ipynb",
     "scripts/6_rain_and_flowering.ipynb",
 ]
-
-# Optional animation notebook
-phenocam_notebook = "scripts/6_phenocam_data_animation.ipynb"
-if os.path.exists(phenocam_zip):
-    notebooks.append(phenocam_notebook)
-else:
-    print(f"Skipping {phenocam_notebook} (requires Phenocams.zip)")
 
 # ---------------------------
 # 4️⃣ Execute notebooks sequentially
