@@ -36,12 +36,12 @@ sys.path.append(SCRIPTS_PATH)  # make decid_package importable
 # ---------------------------
 # 2️⃣ Check for large files
 # ---------------------------
-phenocam_zip = os.path.join(DATA_PATH, "Phenocams.zip")
-has_phenocam = True
-if not os.path.exists(phenocam_zip):
-    has_phenocam = False
-    print(f"⚠️  Phenocams.zip not found at {phenocam_zip}")
-    print("Skipping the animation notebook. You can download it manually or provide a link.")
+# phenocam_zip = os.path.join(DATA_PATH, "Phenocams.zip")
+# has_phenocam = True
+# if not os.path.exists(phenocam_zip):
+#     has_phenocam = False
+#     print(f"⚠️  Phenocams.zip not found at {phenocam_zip}")
+#     print("Skipping the animation notebook. You can download it manually or provide a link.")
 
 # ---------------------------
 # 3️⃣ List of notebooks to execute
