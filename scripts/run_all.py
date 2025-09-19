@@ -90,12 +90,12 @@ for nb in notebooks:
         kernel_name="python3",
         resources={"metadata": {"path": str(nb_path.parent)}},  # THIS LINE
     )
-    
+
     client.execute()
 
-    output_path = REPO_ROOT / "outputs" / f"executed_{Path(nb).stem}.ipynb"
-    with open(output_path, "w", encoding="utf-8") as f:
-        write(nb_node, f)
+    # output_path = REPO_ROOT / "outputs" / f"executed_{Path(nb).stem}.ipynb"
+    # with open(output_path, "w", encoding="utf-8") as f:
+    #     write(nb_node, f)
 
 print("\n\n✅ All notebooks executed.")
 
