@@ -14,7 +14,7 @@ import urllib.request
 # ---------------------------
 # 1️⃣ Paths
 # ---------------------------
-REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SCRIPTS_PATH = os.path.join(REPO_ROOT, "scripts")
 DATA_PATH = os.path.join(REPO_ROOT, "data")
 
