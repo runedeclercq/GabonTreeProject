@@ -53,7 +53,7 @@ Go to colab.research.google.com
 	- Step 2: Saves executed notebooks to your Google Drive under: GabonTreeProject > outputs
 
 4. To Run Other Notebooks Individually
-- After setup (steps 1 & 3), open other notebooks via: File > Open notebook > GitHub
+- After setup (steps 1 & 3), open other notebooks via: File > Open notebook > GitHub in another tabblad, it's essential that the 0_SETUP_GOOGLE_COLAB.ipynb notebook stays open and running to access the repository and data
 - You can view code, outputs, and edit/run them freely.
 
 
