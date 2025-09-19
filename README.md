@@ -41,29 +41,22 @@ Contains the decid package and the jupyter notebooks:
 1. Open Colab 
 Go to colab.research.google.com
 
-2. Load the Setup Notebook
+A. Run all notebooks
 - Click File > Open notebook > GitHub
 - Enter: runedeclercq/GabonTreeProject
 - Select: scripts/0_SETUP_GOOGLE_COLAB.ipynb
-
-3. Run the Code Blocks
-- Step 1 and Step 3 are required
-- Step 2 and Step 4 are optional
+- Run the Code Blocks
 	- Step 4: Executes all notebooks in the folder, generating outputs and figures. These will appear in the Colab file browser under: GabonTreeProject > outputs
 	- Step 2: Saves executed notebooks to your Google Drive under: GabonTreeProject > outputs
 
-4. To Run Other Notebooks Individually
+B. To Run the Notebooks Individually
+- Open each notebook
 - After setup (steps 1 & 3), open other notebooks via: File > Open notebook > GitHub in another tabblad, it's essential that the 0_SETUP_GOOGLE_COLAB.ipynb notebook stays open and running to access the repository and data
 - To check wether the repository is open and accessible, you should see the GabonTreeProject folder with subfolders in the colab folder (on the left navigation pane).
 - You can view code, outputs, and edit/run them freely.
 
 
-Local setup: Visual Studio Code (VSC) with a local Python environment and jupyter extension.
-
-2. Create a new Python virtual environment in a local folder (e.g., .venv).
-3. Install dependencies: 
-	pip install -r requirements_local.txt
-4. Open the Jupyter notebooks in the scripts/ folder and run them in order, or run `python run_all.py` to generate outputs
+⚠️ Colab sessions are isolated per tab. If your notebooks depend on outputs from previous ones, use %run to execute them sequentially in a single notebook, or run run_all.py (code block 4 in setup notebook).
 
 ### 💻 Option 2: Local Setup (VS Code + Python)
 1. Clone the repository

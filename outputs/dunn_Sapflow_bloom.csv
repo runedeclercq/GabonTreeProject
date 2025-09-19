@@ -1,0 +1,7 @@
+,inter_bloom,major_bloom,minor_bloom,post-bloom,pre-bloom,unknown
+inter_bloom,1.0,1.0,0.1141,<0.001,<0.001,<0.001
+major_bloom,1.0,1.0,1.0,1.0,1.0,0.5274
+minor_bloom,0.1141,1.0,1.0,1.0,1.0,1.0
+post-bloom,<0.001,1.0,1.0,1.0,1.0,1.0
+pre-bloom,<0.001,1.0,1.0,1.0,1.0,0.6537
+unknown,<0.001,0.5274,1.0,1.0,0.6537,1.0

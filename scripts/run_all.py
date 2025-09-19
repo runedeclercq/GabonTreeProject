@@ -56,8 +56,8 @@ notebooks = [
 ]
 
 # Only include the animation notebook if Phenocams.zip exists
-if has_phenocam:
-    notebooks.append("6_phenocam_data_animation.ipynb")
+# if has_phenocam:
+#     notebooks.append("6_phenocam_data_animation.ipynb")
 
 # ---------------------------
 # 4️⃣ Execute notebooks sequentially
@@ -65,7 +65,7 @@ if has_phenocam:
 for nb in notebooks:
     nb_path = os.path.join(SCRIPTS_PATH, nb)
     output_nb = os.path.join(OUTPUTS_PATH, f"executed_{os.path.basename(nb)}")
-    print(f"/n🚀 Executing {nb_path} → {output_nb}/n")
+    print(f"\n🚀 Executing {nb_path} → {output_nb}\n")
     os.system(f'jupyter nbconvert --to notebook --execute "{nb_path}" --output "{output_nb}"')
 
-print(f"/n/n✅ All notebooks executed. Outputs are in: {OUTPUTS_PATH}")
+print(f"\n\n✅ All notebooks executed. Outputs are in: {OUTPUTS_PATH}")
