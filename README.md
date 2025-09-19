@@ -11,21 +11,21 @@ scripts/                  -  Python decid package + Jupyter notebooks
 
 
 
-# SUBFOLDERS DETAILS 
+## SUBFOLDERS DETAILS 
 
-## Bush_climate_R_scripts 
+### Bush_climate_R_scripts 
 Contains the R code and provided data in Bush_data/.
 
 The R script Bush_climate_variables_writeout.R exports plotting data as CSVs for use in Python notebooks.
 
-## data
+### data
 contains all necessary data for running the scripts
 
-## scripts 
+### scripts 
 Contains the decid package and the jupyter notebooks:
 
 - 1_data_cleanup.ipynb 		— data cleaning, detrending, smoothing
-- 2_diameter_comparison.ipynb 	— resampling, aggregation, seasonal comparison, 					phenology event detection
+- 2_diameter_comparison.ipynb 	— resampling, aggregation, seasonal comparison, phenology event detection
 - 3_diurnal_changes.ipynb 	— explore diurnal variations during leaf flush periods
 - 4_climate.ipynb 		— load Bush climate data and reproduce graphs
 - 5_water_relations.ipynb 	— hydraulic measures (TWD, DGR, MDS)
