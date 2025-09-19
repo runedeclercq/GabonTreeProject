@@ -29,6 +29,12 @@ if os.path.exists("/content/drive/MyDrive"):
 os.makedirs(OUTPUTS_PATH, exist_ok=True)
 sys.path.append(SCRIPTS_PATH)  # make decid_package importable
 
+
+import os
+print(REPO_ROOT)
+print(SCRIPTS_PATH)
+
+
 # ---------------------------
 # 2️⃣ Check for large files
 # ---------------------------
