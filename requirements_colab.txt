@@ -5,3 +5,5 @@ seaborn
 scikit-learn
 scikit_posthocs
 tqdm
+nbclient
+nbformat

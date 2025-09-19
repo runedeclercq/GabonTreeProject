@@ -10,6 +10,9 @@ GabonTreeProject Startup Script
 import os
 import sys
 import urllib.request
+from nbclient import NotebookClient
+from nbformat import read, write
+from pathlib import Path
 
 # ---------------------------
 # 1️⃣ Paths
@@ -27,10 +30,11 @@ if os.path.exists("/content/drive/MyDrive"):
     OUTPUTS_PATH = drive_path
 
 os.makedirs(OUTPUTS_PATH, exist_ok=True)
-sys.path.append(SCRIPTS_PATH)  # make decid_package importable
+if SCRIPTS_PATH not in sys.path:
+    sys.path.insert(0, SCRIPTS_PATH)
 
-# print(REPO_ROOT)
-# print(SCRIPTS_PATH)
+print(REPO_ROOT)
+print(SCRIPTS_PATH)
 
 
 # ---------------------------
@@ -47,12 +51,12 @@ sys.path.append(SCRIPTS_PATH)  # make decid_package importable
 # 3️⃣ List of notebooks to execute
 # ---------------------------
 notebooks = [
-    "1_data_cleanup.ipynb",
-    "2_diameter_comparison.ipynb",
-    "3_diurnal_changes.ipynb",
-    "4_climate.ipynb",
-    "5_water_relations.ipynb",
-    "6_rain_and_flowering.ipynb",
+    "scripts/1_data_cleanup.ipynb",
+    "scripts/2_diameter_comparison.ipynb",
+    "scripts/3_diurnal_changes.ipynb",
+    "scripts/4_climate.ipynb",
+    "scripts/5_water_relations.ipynb",
+    "scripts/6_rain_and_flowering.ipynb",
 ]
 
 # Only include the animation notebook if Phenocams.zip exists
@@ -62,10 +66,36 @@ notebooks = [
 # ---------------------------
 # 4️⃣ Execute notebooks sequentially
 # ---------------------------
-for nb in notebooks:
-    nb_path = os.path.join(SCRIPTS_PATH, nb)
-    output_nb = os.path.join(OUTPUTS_PATH, f"executed_{os.path.basename(nb)}")
-    print(f"\n🚀 Executing {nb_path} → {output_nb}\n")
-    os.system(f'jupyter nbconvert --to notebook --execute "{nb_path}" --output "{output_nb}"')
+print("Scripts path:", os.path.join(SCRIPTS_PATH, "decid_package"))
+print("Contents:", os.listdir(os.path.join(SCRIPTS_PATH, "decid_package")))
 
-print(f"\n\n✅ All notebooks executed. Outputs are in: {OUTPUTS_PATH}")
+
+os.environ["PIPELINE_MODE"] = "1"
+
+import asyncio
+if sys.platform.startswith("win"):
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+REPO_ROOT = Path(REPO_ROOT)
+for nb in notebooks:
+    nb_path = REPO_ROOT / nb
+    print(f"\n🚀 Executing {nb_path}")
+
+    with open(nb_path, "r", encoding="utf-8") as f:
+        nb_node = read(f, as_version=4)
+
+    client = NotebookClient(
+        nb_node,
+        timeout=600,
+        kernel_name="python3",
+        resources={"metadata": {"path": str(nb_path.parent)}},  # THIS LINE
+    )
+    
+    client.execute()
+
+    output_path = REPO_ROOT / "outputs" / f"executed_{Path(nb).stem}.ipynb"
+    with open(output_path, "w", encoding="utf-8") as f:
+        write(nb_node, f)
+
+print("\n\n✅ All notebooks executed.")
+
