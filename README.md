@@ -54,6 +54,7 @@ Go to colab.research.google.com
 
 4. To Run Other Notebooks Individually
 - After setup (steps 1 & 3), open other notebooks via: File > Open notebook > GitHub in another tabblad, it's essential that the 0_SETUP_GOOGLE_COLAB.ipynb notebook stays open and running to access the repository and data
+- To check wether the repository is open and accessible, you should see the GabonTreeProject folder with subfolders in the colab folder (on the left navigation pane).
 - You can view code, outputs, and edit/run them freely.
 
 
