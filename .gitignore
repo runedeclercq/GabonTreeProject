@@ -3,5 +3,9 @@ __pycache__/
 *.pyc
 outputs/*
 !outputs/.gitkeep
+!outputs/diurnal_dfs/.gitkeep
+!outputs/figures/.gitkeep
+!outputs/flush_data/.gitkeep
+!outputs/gaps/.gitkeep
 data/Phenocams.zip
 scripts/6_phenocam_data_animation.ipynb
