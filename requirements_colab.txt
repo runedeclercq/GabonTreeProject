@@ -8,4 +8,4 @@ tqdm
 nbclient
 nbformat
 setuptools
--e ./scripts
+-e .
