@@ -7,3 +7,5 @@ scikit_posthocs
 tqdm
 nbclient
 nbformat
+setuptools
+-e ./scripts
