@@ -1,7 +1,6 @@
-,inter_bloom,major_bloom,minor_bloom,post-bloom,pre-bloom,unknown
-inter_bloom,1.0,<0.001,<0.001,<0.001,<0.001,<0.001
-major_bloom,<0.001,1.0,<0.001,<0.001,1.0,<0.001
-minor_bloom,<0.001,<0.001,1.0,0.2016,<0.001,<0.001
-post-bloom,<0.001,<0.001,0.2016,1.0,<0.001,<0.001
-pre-bloom,<0.001,1.0,<0.001,<0.001,1.0,<0.001
-unknown,<0.001,<0.001,<0.001,<0.001,<0.001,1.0
+,pre-bloom,major_bloom,inter_bloom,minor_bloom,post-bloom
+pre-bloom,1.0,1.0,1.0,1.0,1.0
+major_bloom,1.0,1.0,1.0,1.0,1.0
+inter_bloom,1.0,1.0,1.0,1.0,1.0
+minor_bloom,1.0,1.0,1.0,1.0,1.0
+post-bloom,1.0,1.0,1.0,1.0,1.0
