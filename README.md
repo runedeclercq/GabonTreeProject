@@ -3,15 +3,7 @@
 This folder contains the data and Jupyter Notebook scripts for analyzing TreeWatch data (Natkon dendrometer + sap flow sensor), combined with TOMST sensor data and phenological image data.
 
 
-## FOLDER STRUCTURE 
-
-Bush_climate_R_scripts/ -  R scripts by Bush et al. (2020)
-
-scripts/                  -  Python decid package + Jupyter notebooks
-
-
-
-## SUBFOLDERS DETAILS 
+## SUBFOLDERS 
 
 ### Bush_climate_R_scripts 
 Contains the R code and provided data in Bush_data/.
@@ -32,8 +24,8 @@ Contains the decid package and the jupyter notebooks:
 - 3_diurnal_changes.ipynb 	— explore diurnal variations during leaf flush periods
 - 4_climate.ipynb 		— load Bush climate data and reproduce graphs
 - 5_water_relations.ipynb 	— hydraulic measures (TWD, DGR, MDS)
-- 6_phenocam_data_animation.ipynb — create and save MP4 animation of phenocam data
 - 6_rain_and_flowering.ipynb	— identify rain events and bloom periods
+
 
 ## RUNNING THE PROJECT 
 
