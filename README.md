@@ -30,35 +30,31 @@ Contains the decid package and the jupyter notebooks:
 ## RUNNING THE PROJECT 
 
 ### 🌐 Option 1: Google Colab (Easiest)
-1. Open Colab 
-Go to colab.research.google.com
+1. Open Colab: go to colab.research.google.com
 
-A. Run all notebooks
+2. Run all notebooks
 - Click File > Open notebook > GitHub
 - Enter: runedeclercq/GabonTreeProject
 - Select: scripts/0_SETUP_GOOGLE_COLAB.ipynb
 - Run the Code Blocks
-	- Step 4: Executes all notebooks in the folder, generating outputs and figures. These will appear in the Colab file browser under: GabonTreeProject > outputs
+	- Step 4: Executes all notebooks in the folder, generating outputs and figures in the colab runtime. These will appear in the Colab file browser (left window pane) under: GabonTreeProject > outputs
 	- Step 2: Saves executed notebooks to your Google Drive under: GabonTreeProject > outputs
 
-B. To Run the Notebooks Individually
-- Open each notebook
-- After setup (steps 1 & 3), open other notebooks via: File > Open notebook > GitHub in another tabblad, it's essential that the 0_SETUP_GOOGLE_COLAB.ipynb notebook stays open and running to access the repository and data
+OR: Open the Notebooks individually to view code and outputs
+- Open each notebook via File > Open notebook > GitHub > runedeclercq
 - To check wether the repository is open and accessible, you should see the GabonTreeProject folder with subfolders in the colab folder (on the left navigation pane).
-- You can view code, outputs, and edit/run them freely.
+- You can view code and outputs.
+(⚠️ RUNNING THE NOTEBOOKS INDIVIDUALLY IS NOT POSSIBLE YET, I'M WORKING ON IT)
 
 
 ⚠️ Colab sessions are isolated per tab. If your notebooks depend on outputs from previous ones, use %run to execute them sequentially in a single notebook, or run run_all.py (code block 4 in setup notebook).
 
+
 ### 💻 Option 2: Local Setup (VS Code + Python)
 1. Clone the repository
 git clone https://github.com/runedeclercq/GabonTreeProject.git
-2. Create a Virtual Environment
-Example using .venv folder:
-python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-3. Install Dependencies
-pip install -r requirements_local.txt
+2. Create a Virtual Environment and activate it
+3. Install Dependencies: use "pip install -r requirements_local.txt"
 4. Run the Project
 - Open notebooks in scripts/ folder and run them in order OR
 - Run everything at once: python scripts/run_all.py
